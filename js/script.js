@@ -9,14 +9,11 @@ var formAge = document.getElementById('form-age');
 
 // Ticket Variables
 var ticket = document.getElementById('ticket');
-
 var ticketName = document.getElementById('ticket-name');
 var ticketOffer = document.getElementById('ticket-offer');
-var ticketCouch = document.getElementById('ticket-couch');
+var ticketCoach = document.getElementById('ticket-couch');
 var ticketCode = document.getElementById('ticket-code');
 var ticketCost = document.getElementById('ticket-cost');
-
-// BUTTON EVENTS //
 
 // Button Generate Function
 btnGenerate.addEventListener('click',
@@ -34,7 +31,8 @@ btnGenerate.addEventListener('click',
   if (ageValue == 'minorenne') {
     var price = price - (price * 0.2);
     var offer = "Sconto Young"
-  } else if (ageValue == 'senior') {
+  }
+  else if (ageValue == 'senior') {
     var price = price - (price * 0.4);
     var offer = "Sconto Senior"
   }
@@ -43,7 +41,8 @@ btnGenerate.addEventListener('click',
   ticketName.innerHTML = formName.value;
   ticketOffer.innerHTML = offer;
   ticketCost.innerHTML = price.toFixed(2) + "€";
-
+  ticketCoach.innerHTML = Math.floor(Math.random()*10+1);
+  ticketCode.innerHTML = Math.floor(Math.random()*100000);
   // Display Ticket
   ticket.className = "container visible"
   }
@@ -57,7 +56,6 @@ btnDelete.addEventListener('click',
   formName.value = '';
   formDistance.value = '';
   formAge.value = 'minorenne';
-
 
   // Hide Ticket
   ticket.className = "container hidden"
