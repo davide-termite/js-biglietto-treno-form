@@ -12,9 +12,92 @@
   </head>
 
   <body>
+    <!-- Page Wrapper -->
+    <div class="wrapper">
 
+      <!-- Form Section -->
+      <section class="form">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <div class="container">
 
+          <!-- Name -->
+          <div class="form-section">
+            <label value="name"> Nome e Cognome</label>
+            <br>
+            <input type="text" placeholder="Inserisci il tuo nome">
+          </div>
 
+          <!-- Km -->
+          <div class="form-section">
+            <label value="distance"> Km da percorrere</label>
+            <br>
+            <input type="text" placeholder="Inserisci i kilometri">
+          </div>
+
+          <!-- Age -->
+          <div class="form-section">
+            <label value="age"> Fascia d'età</label>
+            <br>
+            <select class="" name="">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="senior">Senior (Over 65)</option>
+            </select>
+          </div>
+
+          <!-- Buttons -->
+          <div class="button">
+            <button id="generate">Genera</button>
+            <button id="delete">Annulla</button>
+          </div>
+        </div>
+      </section>
+      <!-- End Form Section -->
+
+      <!-- Ticket Section -->
+      <section class="ticket">
+        <h2>Il tuo biglietto</h2>
+        <div class="container">
+
+          <h3>Dettaglio passeggeri</h3>
+          <div class="ticket-wrap">
+
+            <!-- Name -->
+            <div class="ticket-section">
+              <h4>Nome passeggero</h4>
+              <span id=""></span>
+            </div>
+
+            <!-- Offer -->
+            <div class="ticket-section">
+              <h4>Offerta</h4>
+              <span id=""></span>
+            </div>
+
+            <!-- Carrozza -->
+            <div class="ticket-section">
+              <h4>Carrozza</h4>
+              <span id=""></span>
+            </div>
+
+            <!-- Codice CP -->
+            <div class="ticket-section">
+              <h4>Codice CP</h4>
+              <span id=""></span>
+            </div>
+
+            <!-- Costo Biglietto-->
+            <div class="ticket-section">
+              <h4>Costo Biglietto</h4>
+              <span id=""></span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Ticket Section -->
+    </div>
+    <!-- End Page Wrapper -->
 
     <script src="js/script.js"> </script>
   </body>

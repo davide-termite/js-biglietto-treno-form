@@ -1,5 +1,96 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* End General Reset */
+
+/* General Rules */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+h2{
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+h3{
+  color: black;
+}
+button{
+  color: #b91450;
+  font-weight: 700;
+  padding: 15px 20px;
+  height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+label{
+  color: #b91450;
+  text-align: center;
+  font-weight: 700;
+}
+input{
+  margin-top: 15px;
+  padding: 10px;
+}
+select{
+  margin-top: 25px;
+}
+/* End General Rules */
+
+/* General Layout */
+.wrapper {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b91450;
+}
+
+.container {
+  width: 75vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+/* End General Layout */
+
+/* Form Section */
+.form-section {
+  margin: 50px 20px;
+}
+.button {
+  align-self: center;
+  margin-left: 50px;
+}
+/* End Form Section */
+
+/* Ticket Section */
+.ticket .container{
+  display: flex;
+  flex-direction: column;
+}
+.ticket .container h3{
+  padding: 20px 0 0 20px;
+  text-transform: uppercase;
+}
+
+.ticket-wrap {
+  border: 2px solid black;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-wrap .ticket-section{
+  padding: 20px;
+}
+.ticket-wrap .ticket-section:first-child{
+  background-color: gray;
+  text-transform: uppercase;
+}
+/* End Ticket Section */
