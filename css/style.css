@@ -40,6 +40,12 @@ input{
 select{
   margin-top: 25px;
 }
+.hidden {
+  display: none!important;
+}
+.visible {
+  display: flex!important;
+}
 /* End General Rules */
 
 /* General Layout */
@@ -58,6 +64,7 @@ select{
   display: flex;
   justify-content: center;
 }
+
 /* End General Layout */
 
 /* Form Section */

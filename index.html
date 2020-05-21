@@ -22,23 +22,23 @@
 
           <!-- Name -->
           <div class="form-section">
-            <label value="name"> Nome e Cognome</label>
+            <label> Nome e Cognome</label>
             <br>
-            <input type="text" placeholder="Inserisci il tuo nome">
+            <input id="form-name" type="text" placeholder="Inserisci il tuo nome">
           </div>
 
           <!-- Km -->
           <div class="form-section">
-            <label value="distance"> Km da percorrere</label>
+            <label> Km da percorrere</label>
             <br>
-            <input type="text" placeholder="Inserisci i kilometri">
+            <input id="form-distance" type="number" placeholder="Inserisci i kilometri">
           </div>
 
           <!-- Age -->
           <div class="form-section">
-            <label value="age"> Fascia d'età</label>
+            <label> Fascia d'età</label>
             <br>
-            <select class="" name="">
+            <select id="form-age">
               <option value="minorenne">Minorenne</option>
               <option value="maggiorenne">Maggiorenne</option>
               <option value="senior">Senior (Over 65)</option>
@@ -57,7 +57,7 @@
       <!-- Ticket Section -->
       <section class="ticket">
         <h2>Il tuo biglietto</h2>
-        <div class="container">
+        <div id="ticket" class="container hidden">
 
           <h3>Dettaglio passeggeri</h3>
           <div class="ticket-wrap">
@@ -65,31 +65,31 @@
             <!-- Name -->
             <div class="ticket-section">
               <h4>Nome passeggero</h4>
-              <span id=""></span>
+              <span id="ticket-name"></span>
             </div>
 
             <!-- Offer -->
             <div class="ticket-section">
               <h4>Offerta</h4>
-              <span id=""></span>
+              <span id="ticket-offer"></span>
             </div>
 
             <!-- Carrozza -->
             <div class="ticket-section">
               <h4>Carrozza</h4>
-              <span id=""></span>
+              <span id="ticket-couch"></span>
             </div>
 
             <!-- Codice CP -->
             <div class="ticket-section">
               <h4>Codice CP</h4>
-              <span id=""></span>
+              <span id="ticket-code"></span>
             </div>
 
             <!-- Costo Biglietto-->
             <div class="ticket-section">
               <h4>Costo Biglietto</h4>
-              <span id=""></span>
+              <span id="ticket-cost"></span>
             </div>
 
           </div>
